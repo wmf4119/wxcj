@@ -1,0 +1,144 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+html,body{
+	height:100%;
+}
+.swiper-container{
+	height:100%;
+}
+
+.swiper-container .swiper-slide{
+	height:100%;
+	display:flex;
+	flex-direction:column;
+	/*position: relative;*/
+}
+
+.swiper-container .swiper-slide img{
+	width:100%;
+	position: absolute;
+}
+.swiper-container .swiper-slide div{
+	display:flex;
+	flex-direction:column;
+	/*justify-content:center;*/
+}
+.swiper-container .swiper-slide:nth-child(1){
+	background:url(../img/1d3e966e-e39d-4e75-9d5e-d1b312671bcd.jpg);
+	background-size: cover;
+}
+.swiper-container .swiper-slide:nth-child(2){
+	background:url(../img/c8bb9af6-9573-4f78-9c13-c985574ea762.jpg);
+	background-size: cover;
+	
+}
+.swiper-container .swiper-slide:nth-child(3){
+	background:url(../img/faaea2a0-71c1-4de6-b132-f769f3a8a43c.jpg);
+	background-size: cover;
+	
+}
+.swiper-container .swiper-slide:nth-child(4){
+	background:url(../images/wood.jpg);
+	background-size: cover;	
+}
+.swiper-container .swiper-slide:nth-child(5){
+	background:url(../img/506e2805-29ed-47fd-b35c-2ce378ac9e0f.jpg);
+	background-size: cover;
+	
+}
+.swiper-container .swiper-slide:nth-child(2) h2{
+	z-index: 4;
+	color: #122F0D;
+	/*font:900 32px/1 "行书";*/
+	font:900 2rem/1 "行书";
+	position: absolute;
+	left: 18%;
+	top: 20%;
+}
+.swiper-container .swiper-slide:nth-child(2) h3{
+	z-index: 4;
+	color: #122F0D;
+	font:900 2rem/1 "行书";
+	position: absolute;
+	left: 38%;
+	top: 27%;
+}
+.swiper-container .swiper-slide:nth-child(2) p{
+	z-index: 4;
+	color: #0A2805;
+	font:bold 1rem/2 "行书";
+	position: absolute;
+	left: 18%;
+	top: 38%;
+	width: 58%;
+}
+.swiper-container .swiper-slide:nth-child(3) p{
+	color: #0A2805;
+	position: absolute;
+	left: 20%;
+	top: 50%;
+	line-height: 1.5;
+}
+strong{display: block;}
+.swiper-container .swiper-slide .part{
+	position: relative;
+	flex:1;
+}
+//动画效果
+.booklet{
+	-moz-box-shadow:0px 0px 1px #fff;
+	-webkit-box-shadow:0px 0px 1px #fff;
+	box-shadow:0px 0px 1px #fff;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+}
+.book_wrapper{
+	width: 905px;
+	height:540px;
+	background:transparent url(../images/bg.png) no-repeat;
+	background-position:0% 100%;
+	background-size:60% 60%;
+	transform: rotate(30deg);
+}
+
+#music{position: absolute;right:5%;top:3%;z-index:1;width:55px;height:55px;}
+#music span{
+	width: 55px;
+	height: 55px;
+	background: url(../img/units-icons.png) no-repeat;
+	display: block;
+	animation: roll 3s 0s infinite linear;
+	transform: scale(0.6);
+}
+@keyframes roll{
+	0%{transform: rotate(0deg) scale(0.6);}
+	100%{transform: rotate(360deg) scale(0.6);}
+}
+#up{
+	position: absolute;
+	right:45%;
+	bottom:0;
+	z-index:1;
+	width:55px;
+	height:55px;
+	animation: up 1s 0s infinite linear;
+}
+#up span{
+	width: 100%;
+	height: 55px;
+	background: url(../img/units-icons.png) no-repeat;
+	background-position: -55px 0;
+	display: block;
+	transform: scale(0.6);
+}
+@keyframes up{
+	0%{opacity: 0;bottom: -2%;}
+	50%{opacity: 1;bottom: -1%;}
+	100%{opacity: 0;bottom:0;}
+}
+
